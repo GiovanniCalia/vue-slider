@@ -1,32 +1,34 @@
 const app = new Vue({
-    el: "#app",
+    el: "#root",
+    arrIndex: 0,
     data: {
         arrSlides: [
             {
                 title: "Svezia",
-                img: "01.jpg",
+                items: "img/01.jpg",
                 text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
             },
             {
                 title: "Norvegia",
-                img: "02.jpg",
+                items: "img/02.jpg",
                 text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
             },
             {
                 title: "Finlanda",
-                img: "03.jpg",
+                items: "img/03.jpg",
                 text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
             },
             {
                 title: "Irlanda",
-                img: "04.jpg",
+                items: "img/04.jpg",
                 text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
             },
             {
                 title: "Germania",
-                img: "05.jpg",
+                items: "img/05.jpg",
                 text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
             },
         ],
     },
 });
+
