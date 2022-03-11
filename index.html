@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="thumbs">
-				<div v-for="(thumb, index) in arrSlides" @click="arrIndex == index" :class="index == arrIndex ? `active` : ``"class="thumb active">
+				<div v-for="(thumb, index) in arrSlides" @click="arrIndex == index" :class="index == arrIndex ? `active` : ``" class="thumb">
 					<img :src="thumb.items" :alt="thumb.title">
 				</div>
 
