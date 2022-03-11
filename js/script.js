@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#root",
-    arrIndex: 0,
     data: {
+        arrIndex: 0,
         arrSlides: [
             {
                 title: "Svezia",
@@ -30,5 +30,22 @@ const app = new Vue({
             },
         ],
     },
+    methods: {
+        previous(){
+            if (this.arrIndex == 0){
+                this.arrIndex = this.arrSlides.length - 1;
+            } else{
+                this.arrIndex--;
+            }
+
+        },
+        next(){
+            if (this.arrIndex == this.arrSlides.length - 1){
+                this.arrIndex = 0;
+            } else{
+                this.arrIndex++;
+            }
+        }
+    }
 });
 
