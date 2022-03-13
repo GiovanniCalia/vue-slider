@@ -45,7 +45,17 @@ const app = new Vue({
             } else{
                 this.arrIndex++;
             }
-        }
-    }
-});
+        },
+    },
+    created(){
+        setInterval(changeImage, 1000);
 
+        function changeImage(){
+            if (this.arrIndex == this.arrSlides.length - 1){
+                this.arrIndex = 0;
+            } else{
+                this.arrIndex++;
+            } 
+        }
+    },
+});
