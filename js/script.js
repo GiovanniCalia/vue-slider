@@ -2,6 +2,7 @@ const app = new Vue({
     el: "#root",
     data: {
         arrIndex: 0,
+        upHere: true,
         arrSlides: [
             {
                 title: "Svezia",
@@ -37,7 +38,6 @@ const app = new Vue({
             } else{
                 this.arrIndex--;
             }
-
         },
         next(){
             if (this.arrIndex == this.arrSlides.length - 1){
@@ -46,16 +46,14 @@ const app = new Vue({
                 this.arrIndex++;
             }
         },
-    },
-    created(){
-        setInterval(changeImage, 1000);
-
-        function changeImage(){
-            if (this.arrIndex == this.arrSlides.length - 1){
-                this.arrIndex = 0;
-            } else{
-                this.arrIndex++;
-            } 
+        stop(){
+            clearInterval(this.interval)
+        },
+        start(){
+            this.interval = setInterval(this.next, 1000)
         }
+    },
+    mounted(){
+        this.start();
     },
 });

@@ -13,7 +13,7 @@
 	<div id="root">
 		<div class="slider">
 			<div class="slide">
-				<img :src="arrSlides[arrIndex].items" :alt="arrSlides[arrIndex].title">
+				<img @mouseover="stop"  @mouseleave="start" :src="arrSlides[arrIndex].items" :alt="arrSlides[arrIndex].title">
 				<div class="slide-contents">
 					<h2 class="slide-title">{{ arrSlides[arrIndex].title }}</h2>
 					<p class="slide-text">{{ arrSlides[arrIndex].text }}</p>
